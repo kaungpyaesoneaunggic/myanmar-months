@@ -11,12 +11,12 @@ export default function MonthsSlide({ months }) {
       slidesToSlide: 1 // optional, default to 1.
     },
     tablet: {
-      breakpoint: { max: 1024, min: 768 },
+      breakpoint: { max: 1024, min: 400 },
       items: 3,
       slidesToSlide: 1 // optional, default to 1.
     },
     mobile: {
-      breakpoint: { max: 767,},
+      breakpoint: { max: 399, min:0},
       items: 3,
       slidesToSlide: 1 // optional, default to 1.
     }

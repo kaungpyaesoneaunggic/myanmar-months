@@ -1,4 +1,3 @@
-import React, { useRef, useState } from "react";
 import useFetch from "../useFetch";
 import MonthsSlide from "../components/MonthsSlide";
 
@@ -21,12 +20,12 @@ export default function HomePage() {
       slidesToSlide: 1, // optional, default to 1.
     },
     tablet: {
-      breakpoint: { max: 1024, min: 768 },
+      breakpoint: { max: 1024, min: 400 },
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
     },
     mobile: {
-      breakpoint: { max: 767, min: 100 },
+      breakpoint: { max: 399, min:0},
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
     },
@@ -39,12 +38,12 @@ export default function HomePage() {
           className="column col-lg-10 mt-4 d-flex flex-wrap justify-content-around align-items-center"
           style={{ width: "100vw" }}
         >
-          <div className="card col-lg-6 m-3 cornerRounded">
+          <div className="card col-lg-5 m-3 cornerRounded" style={{minWidth:'200px'}}>
             <Carousel
               draggable={true}
               swipeable={true}
               responsive={responsive}
-              infinite={false}
+              infinite={true}
               autoPlaySpeed={700}
               transitionDuration={500}
               containerClass="carousel-container"
@@ -52,19 +51,16 @@ export default function HomePage() {
               dotListClass="custom-dot-list-style"
             >
               <img
-                style={{ zIndex: "" }}
                 className="cornerRounded fluid"
                 src={thingyan}
                 alt="Thingyan"
               />
               <img
-                style={{ zIndex: "" }}
                 className="cornerRounded fluid"
                 src={thadingyut}
                 alt="Thingyan"
               />
               <img
-                style={{ zIndex: "" }}
                 className="cornerRounded fluid"
                 src={tazaungdaing}
                 alt="Thingyan"
