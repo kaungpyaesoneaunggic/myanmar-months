@@ -1,3 +1,83 @@
-.App {
-  text-align: center;
+.App {  
+  min-height: 100vh;
+}
+.stayAtTop {
+  position: sticky;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #6C757D;
+}
+.stayAtBot {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.minHeight {
+  min-height: 92vh;
+}
+.cornerRounded {
+  border-radius: 15px !important;
+}
+.rightRounded {
+  border-radius: 0px 15px 15px 0px !important;
+}
+.leftRounded {
+  border-radius: 15px 0px 0px 15px !important;
+}
+
+.smallTextBluish {
+  color: white;
+  font-size: large;
+}
+
+.monthImgSmall {
+  width: 16vw !important;
+  height: 10vw !important;
+  object-fit: cover !important;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+  .monthImgSmall {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* Media query for screens between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .monthImgSmall {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+/* Media query for screens larger than 992px */
+@media (min-width: 992px) {
+  .monthImgSmall {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+/* Slider */
+.slider {
+  margin: 0 20px;
+  overflow: "hidden";
+  padding: 2rem 0;
+}
+.react-multi-carousel-list {
+  padding: 0rem 0 2rem 0;
+}
+
+
+/* glass bg */
+.glassBg{
+background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
