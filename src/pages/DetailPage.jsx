@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom/cjs/react-router-dom.min";
+import { Link, useParams } from "react-router-dom";
 import useFetch from "../useFetch";
 import scrollBG from "../imgs/temp.png";
 
