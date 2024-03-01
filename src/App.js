@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2000);
   }, []);
   return (
     <div className="App">
@@ -31,14 +31,17 @@ function App() {
           <SplashPage />
         </div>
       ) : (
-        <div
-          data-aos="fade-zoom-out"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="600"
-        >
-          <Router>
-            <NavBar/>
+        //No animation was present with the div below
+
+        <Router>
+          <div
+            data-aos="fade-zoom-out"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <NavBar />
             <Switch>
               <Route exact path="/">
                 <HomePage />
@@ -47,9 +50,9 @@ function App() {
                 <DetailPage />
               </Route>
             </Switch>
-            <Footer/> 
-          </Router>
-        </div>
+            <Footer />
+          </div>
+        </Router>
       )}
     </div>
   );

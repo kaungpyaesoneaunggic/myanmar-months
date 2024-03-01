@@ -23,25 +23,11 @@ export default function Month({ imageId, monthLabel, monthFestival }) {
             />
           </div>
           {/* month name on image */}
-          <div className="glassBg position-absolute bottom-0 start-0 end-0 text-center text-white p-3">
+          <div className="glassBg position-absolute bottom-0  start-0 end-0 text-center text-white p-3">
             <h4>{monthLabel}</h4>
           </div>
         </div>
       </Link>
     </div>
   );
-}
-{
-  /* <div className="bg-secondary cornerRounded p-1 row">
-        <div className="col-lg-5 leftRounded">
-        <img
-          className="monthImgSmall leftRounded"
-          src={getImageUrl(imageId)}
-        />
-        </div>
-        <div className="col-lg-7  bg-white rightRounded">
-        <p className="smallTextBluish p-0">{monthLabel}လ</p>
-        <p className="smallTextBluish p-0 mt-3">{monthFestival}</p>
-        </div>
-      </div> */
 }

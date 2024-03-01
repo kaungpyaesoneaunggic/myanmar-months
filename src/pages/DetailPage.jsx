@@ -20,16 +20,24 @@ export default function DetailPage() {
       {error && <div>{error}</div>}
       {isPending && (
         <div className="h1 d-flex justify-content-center mt-3 align-items-center minHeight">
-         ခေတ္တစောင့်ပေးပါ...
+          ခေတ္တစောင့်ပေးပါ...
         </div>
       )}
       {month && (
-        <div className="row" style={{ marginBottom:'3vh' }}>
+        <div
+          data-aos="fade-in"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+          className="row"
+          style={{ marginBottom: "3vh" }}
+        >
           <p className="h4 mt-3 text-center">
             <span>{month.MonthMm}</span>
             <span>&#40; {month.MonthEn} &#41;</span>
           </p>
-          <p className="h3 mt-2 text-center">
+          <p  className="h3 mt-2 text-center">
             <span>{month.FestivalMm}</span>
             <span>&#40; {month.FestivalEn} &#41;</span>
           </p>
@@ -41,12 +49,15 @@ export default function DetailPage() {
               <img className="w-100 px-4" src={getImageUrl(month.id)} />
               <p className="mt-3 border p-3 rounded">{month.Description}</p>
             </div>
-            <p className="column col-md-6  border p-3 rounded">{month.Detail}</p>
+            <p className="column col-md-6  border p-3 rounded">
+              {month.Detail}
+            </p>
             <div className="d-flex justify-content-center">
-            <Link to='/' className='btn btn-dark col-md-3'>ပင်မစာမျက်နှာသို့</Link>
+              <Link to="/" className="btn btn-dark col-md-3">
+                ပင်မစာမျက်နှာသို့
+              </Link>
             </div>
           </div>
-          
         </div>
       )}
     </div>
