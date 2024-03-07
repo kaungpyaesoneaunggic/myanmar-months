@@ -17,6 +17,7 @@ export default function Month({ imageId, monthLabel, monthFestival }) {
             style={{ paddingTop: "100%", position: "relative" }}
           >
             <img
+            loading="lazy"
               className="position-absolute top-0 start-0 w-100 h-100 object-cover"
               src={getImageUrl(imageId)}
               alt="month"
