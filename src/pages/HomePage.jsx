@@ -38,7 +38,7 @@ export default function HomePage() {
           className="column col-lg-10 mt-4 d-flex flex-wrap justify-content-around align-items-center"
           style={{ width: "100vw" }}
         >
-          <div className="card col-lg-5 m-3 cornerRounded" style={{minWidth:'200px'}}>
+          <div data-test="carouselOne" className="card col-lg-5 m-3 cornerRounded" style={{minWidth:'200px'}}>
             <Carousel
               draggable={true}
               swipeable={true}

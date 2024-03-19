@@ -21,7 +21,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      {loading ? (
+      {/* {loading ? (
         <div
           data-aos="fade-zoom-in"
           data-aos-offset="200"
@@ -30,8 +30,7 @@ function App() {
         >
           <SplashPage />
         </div>
-      ) : (
-        //No animation was present with the div below
+      ) : ( */}
 
         <Router>
           <div
@@ -53,7 +52,7 @@ function App() {
             <Footer />
           </div>
         </Router>
-      )}
+      {/* )} */}
     </div>
   );
 }
